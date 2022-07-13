@@ -20,8 +20,8 @@ tracing = "0.1"
 tokio = {version = "1", features = ["full"]}
 tracing-subscriber = "0.3"
 anyhow = "1.0"
-#libcore= {git="https://github.com/sabaton-rs/corelib.git"}
-libcore= {path="/home/devuser/TSYSTEMS/corelib"}
+libcore= {git="https://github.com/sabaton-rs/corelib.git"}
+sabaton-hal = { git = "https://github.com/sabaton-rs/sabaton-hal.git"}
 ## Topics and Interfaces this Application depends on
 ## Interfaces
 #interface-example = { git = "https://github.com/sabaton-rs/interface-example.git"}
