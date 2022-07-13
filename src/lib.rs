@@ -41,6 +41,7 @@ use libcore::{
 pub fn set_successful_boot()->Result<()> {
     //let bytes_slice = include_bytes!("./testdata/bolomessage.dat");
     //let bolo_message_ab: &BootloaderMessageAB = bytes_slice.as_slice().try_into().unwrap();
+    println!("INSIDE set successful boot");
     let bolo_message_ab=create_from_misc_partition()?;
     let ctrl = bolo_message_ab.get_bootloader_control().unwrap();
 
