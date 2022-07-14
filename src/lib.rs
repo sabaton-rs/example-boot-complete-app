@@ -5,7 +5,7 @@ use libcore::bootloader::bootcontrol::BootControlImpl;
 pub fn set_successful_boot()->Result<()> {
     let mut bootctrl = BootControlImpl::create()?;
     let active_slot=bootctrl.active_slot()?;
-    print!("Current active slot is {}",active_slot);
+    print!("Current active slot is {}\n",active_slot);
     bootctrl.set_boot_successful()?;
     Ok(())
 }
