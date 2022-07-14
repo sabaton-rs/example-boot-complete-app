@@ -17,7 +17,7 @@ fn main() {
         )
         .get_matches_from(args);
         let set_boot= matches.is_present("set-successful-boot");
-    println!("set_successful_boot{}",set_boot);
+    println!("set_successful_boot{}\n",set_boot);
    
     if set_boot
     {
